@@ -2,6 +2,12 @@
 // void checker_for_negative(n){
 //     Console.WriteLine("function called"+ n);
 // }
+static int negative_checker(int n){
+    if (n<=-1){
+         Console.WriteLine("Positive integers only");
+    }
+    return FizzBuzz(n);
+}
 
 static int FizzBuzz(int n){
     for (int i = 0; i < n + 1; i++){
@@ -23,15 +29,17 @@ static int FizzBuzz(int n){
     }
     return (n);}
 // Prompt use to enter an int
-//? Console.WriteLine("Enter a number to FizzBuzz from 0 to:");
+Console.WriteLine("Enter a number to FizzBuzz from 0 to:");
 //! if a string alert user to enter int only or negative
 //coverts string into integer
-//? int n = Convert.ToInt32(Console.ReadLine());
-int n = 27;
+int n = Convert.ToInt32(Console.ReadLine());
+// int n = 27;
+// int n = -1;
 // checker_for_negative(n);
 // //!testing 
 // Console.WriteLine("test: " + n);
-FizzBuzz(n);
+// FizzBuzz(n);
+negative_checker(n);
 
 
 
